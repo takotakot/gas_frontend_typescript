@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    Hello JavaScript
+    <div>
+      <button onclick="runBackendFunction_(google.script.run, 'be')" id="runBackendFunction_Button">Backend Function</button>
+      <button onclick="runRandomErrorFunction_(google.script.run)" id="runRandomErrorFunction_Button">Random Error Function</button>
+    </div>
+    <hr>
+    <div id="messages"></div>
+    <script>
+      <?!= runBackendFunction_.toString() ?>
+      <?!= runRandomErrorFunction_.toString() ?>
+      <?!= onSuccess_.toString() ?>
+      <?!= onFailure_.toString() ?>
+    </script>
+  </body>
+</html>
