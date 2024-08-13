@@ -9,11 +9,14 @@
     </div>
     <hr>
     <div id="messages"></div>
+    <!--
+      See: https://developers.google.com/apps-script/guides/html/templates
+    -->
     <script>
-      <?!= runBackendFunction_.toString() ?>
-      <?!= runRandomErrorFunction_.toString() ?>
-      <?!= onSuccess_.toString() ?>
-      <?!= onFailure_.toString() ?>
+      /*
+      The function frontendFunctionString begins with closing comment and ends with opening comment to avoid syntax error.
+      <?!= frontendFunctionString() ?>
+      */
     </script>
   </body>
 </html>

@@ -11,7 +11,24 @@ export function frontendFunctions(): string[] {
     runRandomErrorFunction_.name,
     onSuccess_.name,
     onFailure_.name,
+    frontendFunctionString.name,
   ];
+}
+
+/**
+ * Returns a string representation of the frontend functions for templating.
+ *
+ * @returns The string representation of the frontend function.
+ */
+export function frontendFunctionString(): string {
+  return [
+    '*/',
+    runBackendFunction_.toString(),
+    runRandomErrorFunction_.toString(),
+    onSuccess_.toString(),
+    onFailure_.toString(),
+    '/*',
+  ].join('\n');
 }
 
 /**
