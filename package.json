@@ -22,7 +22,7 @@
     "@google/clasp": "^2.5.0",
     "@types/google-apps-script": "^1.0.97",
     "@types/jest": "^29.5.14",
-    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.1",
