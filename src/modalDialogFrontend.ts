@@ -1,4 +1,4 @@
-import { backendFunction, randomErrorFunction } from './modalDialogBackend';
+import {backendFunction, randomErrorFunction} from './modalDialogBackend';
 
 /**
  * Retrieves an array of frontend function names.

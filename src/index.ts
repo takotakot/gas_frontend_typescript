@@ -1,5 +1,5 @@
-import { backendFunctions } from './modalDialogBackend';
-import { frontendFunctions } from './modalDialogFrontend';
+import {backendFunctions} from './modalDialogBackend';
+import {frontendFunctions} from './modalDialogFrontend';
 
 /**
  * Function called when the spreadsheet is opened.
@@ -28,7 +28,7 @@ function openDialog(): void {
  */
 function openHtmlDialog(): void {
   const html = HtmlService.createHtmlOutputFromFile(
-    'static/sample-dialog.html'
+    'static/sample-dialog.html',
   );
   SpreadsheetApp.getUi().showModalDialog(html, 'Sample');
 }
@@ -38,7 +38,7 @@ function openHtmlDialog(): void {
  */
 function openJsDialog(): void {
   const html = HtmlService.createTemplateFromFile(
-    'static/js-dialog.html'
+    'static/js-dialog.html',
   ).evaluate();
   SpreadsheetApp.getUi().showModalDialog(html, 'JavaScript');
 }

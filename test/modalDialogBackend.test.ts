@@ -1,4 +1,4 @@
-import { backendFunction } from '../src/modalDialogBackend';
+import {backendFunction} from '../src/modalDialogBackend';
 
 describe('backendFunction', () => {
   it('Returns the same string as the argument', () => {
